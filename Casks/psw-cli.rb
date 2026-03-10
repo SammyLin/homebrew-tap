@@ -3,7 +3,7 @@ cask "psw-cli" do
   name "psw-cli"
   desc "Secure CLI password manager with age encryption and macOS Keychain"
   homepage "https://github.com/SammyLin/psw-cli"
-  version "1.1.0"
+  version "1.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,22 +15,22 @@ cask "psw-cli" do
   on_macos do
     on_intel do
       url "https://github.com/SammyLin/psw-cli/releases/download/v#{version}/psw-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "9b88e5d13ed59760a27f224d66c634afd8972a481309ec4a5324a5c87e5bd435"
+      sha256 "37ccd6c627af98b284b3a573e99db5d39a3ad8f738d30261f61b61c7010fe52a"
     end
     on_arm do
       url "https://github.com/SammyLin/psw-cli/releases/download/v#{version}/psw-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "1df4d6c8839670746a189e828aa0e2b12258ea175b4dc103003590a16451bb81"
+      sha256 "e2c10448f4d61458a0316e63f8322e5b9a06d13d63bd5af643496d6e9576a753"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/SammyLin/psw-cli/releases/download/v#{version}/psw-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "a00feef0c53dcae85bec226f2d59824f7b4cc72fd85583106302124dbb9f6bd0"
+      sha256 "812fd368516e44f16b66dd05b4f9c90fa123d2d92e79e902b591eccb2a99fc24"
     end
     on_arm do
       url "https://github.com/SammyLin/psw-cli/releases/download/v#{version}/psw-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "1c4c02c56bfe130ef822ec127b1494294cc8430f02f537c828170396f9301a7e"
+      sha256 "d92ea8e5882042fcc6506fc1efc37825bdf6087a214ba8b4ce3982f6714a3c91"
     end
   end
 
