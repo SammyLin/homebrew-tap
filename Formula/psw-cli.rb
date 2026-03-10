@@ -25,8 +25,6 @@ class PswCli < Formula
   end
 
   def install
-    binary_name = "psw-cli-#{OS.mac? ? "darwin" : "linux"}-#{Hardware::CPU.arm? ? "arm64" : "amd64"}"
-    binary_name += ".exe" if OS.windows?
     bin.install Dir["psw-cli-*"].first => "psw-cli"
   end
 
