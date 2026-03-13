@@ -5,21 +5,21 @@
 class GhOps < Formula
   desc "One-click GitHub operations via OAuth for AI agents"
   homepage "https://github.com/SammyLin/gh-ops"
-  version "1.3.2"
+  version "1.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SammyLin/gh-ops/releases/download/v1.3.2/gh-ops_1.3.2_darwin_amd64.tar.gz"
-      sha256 "39bdab76f6132dd47a35a74c09a3d7a42ba7b830cd9ea3080cd693bc3d887b40"
+      url "https://github.com/SammyLin/gh-ops/releases/download/v1.3.3/gh-ops_1.3.3_darwin_amd64.tar.gz"
+      sha256 "6ef94e86003efc0a872e3a6f2b78a628f9f41037399f5f47802bde19ade71097"
 
       define_method(:install) do
         bin.install "gh-ops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SammyLin/gh-ops/releases/download/v1.3.2/gh-ops_1.3.2_darwin_arm64.tar.gz"
-      sha256 "dd5806966351d33761f42db0492b1eaf952c12a84a1a9705d01877cd422538fe"
+      url "https://github.com/SammyLin/gh-ops/releases/download/v1.3.3/gh-ops_1.3.3_darwin_arm64.tar.gz"
+      sha256 "7b9d254bef68f53b6dd956a45f3c2f9f10416afcfbe0a5b1def6b0eccd41648d"
 
       define_method(:install) do
         bin.install "gh-ops"
@@ -29,15 +29,15 @@ class GhOps < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SammyLin/gh-ops/releases/download/v1.3.2/gh-ops_1.3.2_linux_amd64.tar.gz"
-      sha256 "6dd1e1351c2cb2ffdf49e9ea25562b44fe40a23e2af0c36075352d1b2b421a46"
+      url "https://github.com/SammyLin/gh-ops/releases/download/v1.3.3/gh-ops_1.3.3_linux_amd64.tar.gz"
+      sha256 "29918d47a5822f410def1a6cdad765f6536440395e858f3b3168928320cb1a22"
       define_method(:install) do
         bin.install "gh-ops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SammyLin/gh-ops/releases/download/v1.3.2/gh-ops_1.3.2_linux_arm64.tar.gz"
-      sha256 "24505cb2f1e2bad6c9f9a17edffd05a3e46bb6ac472603c4036a32602b821708"
+      url "https://github.com/SammyLin/gh-ops/releases/download/v1.3.3/gh-ops_1.3.3_linux_arm64.tar.gz"
+      sha256 "058242a8008bd34b5dabb4cdcaa85cbb4c289246a0c836d60ff872a1f05c5cb7"
       define_method(:install) do
         bin.install "gh-ops"
       end
