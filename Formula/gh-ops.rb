@@ -11,7 +11,7 @@ class GhOps < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/SammyLin/gh-ops/releases/download/v1.2.0/gh-ops_1.2.0_darwin_amd64.tar.gz"
-      sha256 "9724aeb7930727d481693e5d493c428784b1e07d2e186864bb6b7ce9db740188"
+      sha256 "292f580501346ae87a360427a2f3b2eca12b9e12089afd374ed1ce6499b30947"
 
       define_method(:install) do
         bin.install "gh-ops"
@@ -19,7 +19,7 @@ class GhOps < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/SammyLin/gh-ops/releases/download/v1.2.0/gh-ops_1.2.0_darwin_arm64.tar.gz"
-      sha256 "e9fb04d4510f5ebd0c8a2937ae4bb17f9004319b902f7840efa45a4633930f39"
+      sha256 "76df5c867f688ba1d27bb25e3d5bb2732de8f118185e293f4370866492584aa5"
 
       define_method(:install) do
         bin.install "gh-ops"
@@ -30,14 +30,14 @@ class GhOps < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/SammyLin/gh-ops/releases/download/v1.2.0/gh-ops_1.2.0_linux_amd64.tar.gz"
-      sha256 "94eb2bd41ba05e5cdf8f28dc3e3f513152a67fc747c3cc8db2f89e89b996e9c1"
+      sha256 "ff95ccc28d4d121cbb1a97ee10dcf9b85ef3835f3175938ddd04cc5c3bb55b9f"
       define_method(:install) do
         bin.install "gh-ops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/SammyLin/gh-ops/releases/download/v1.2.0/gh-ops_1.2.0_linux_arm64.tar.gz"
-      sha256 "38875a470bc10a98724a131e816723d5b6462cd0217c73306fe4e52396ef1882"
+      sha256 "8a6d66d627ea6db5f6d2136d866740de776aa742706d9f6edf9131f4de0804e1"
       define_method(:install) do
         bin.install "gh-ops"
       end
