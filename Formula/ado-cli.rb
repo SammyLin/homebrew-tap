@@ -1,24 +1,24 @@
 class AdoCli < Formula
   desc "Azure DevOps CLI for sprint cards, iterations, and work items"
   homepage "https://github.com/SammyLin/ado-cli"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/SammyLin/ado-cli/releases/download/v0.2.0/ado-darwin-arm64.tar.gz"
-      sha256 "debae382340a67622127d71badef84c3b7b9e6345c1f16adb791dcc6a4511d7e"
+      url "https://github.com/SammyLin/ado-cli/releases/download/v0.3.0/ado-darwin-arm64.tar.gz"
+      sha256 "360bd1df7b6a6e50cf1cf9e3a8d13fef2245fa2afc1985cccc6914bf3ccdac6a"
     end
     on_intel do
-      url "https://github.com/SammyLin/ado-cli/releases/download/v0.2.0/ado-darwin-amd64.tar.gz"
-      sha256 "6897573ded967b2f1abc9aa4134d73871389edc0d2613b97fdb847942ed38a32"
+      url "https://github.com/SammyLin/ado-cli/releases/download/v0.3.0/ado-darwin-amd64.tar.gz"
+      sha256 "73567e7f33c2d6fe0f1770c2b71cfcd971dda7e901c0f1603b1386f1000c5fe7"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/SammyLin/ado-cli/releases/download/v0.2.0/ado-linux-amd64.tar.gz"
-      sha256 "e6df94735b0fa5d469a3a1d4d075dfbb61ddc11363a8babc9c2825071e43d1b7"
+      url "https://github.com/SammyLin/ado-cli/releases/download/v0.3.0/ado-linux-amd64.tar.gz"
+      sha256 "b12b37e3b1f35bc33df5fbf8d367c3f1993329462e09b7830de0bbfa1dc4bdc4"
     end
   end
 
